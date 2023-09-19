@@ -17,31 +17,24 @@ contract GLDToken is ERC20 {
         _blacklisted[hacker] = true;
     }
 
-    function transfer(
+    function _beforeTokenTransfer(
+        address from,
         address to,
         uint256 amount
-    ) public virtual override returns (bool) {
+    ) internal virtual override {
         address owner = _msgSender();
         require(
             _blacklisted[owner] != true,
             "blacklisted address cant transfer money"
         );
-        _transfer(owner, to, amount);
-        return true;
-    }
-
-    function transferFrom(
-        address from,
-        address to,
-        uint256 amount
-    ) public virtual override returns (bool) {
-        address spender = _msgSender();
         require(
-            _blacklisted[spender] != true,
+            _blacklisted[from] != true,
             "blacklisted address cant transfer money"
         );
-        _spendAllowance(from, spender, amount);
-        _transfer(from, to, amount);
-        return true;
+        require(
+            _blacklisted[to] != true,
+            "blacklisted address cant transfer money"
+        );
+        require(amount > 0, "amount cannot be zero");
     }
 }

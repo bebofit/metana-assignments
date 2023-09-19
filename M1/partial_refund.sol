@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract GLDToken is ERC20 {
     mapping(address => bool) private _blacklisted;
     address private _owner;
-    uint total = 1000000;
+    uint total = 1000000 * 10 * 18;
 
     constructor(uint256 initialSupply) ERC20("Gold", "GLD") {
         _mint(msg.sender, initialSupply);
@@ -16,7 +16,7 @@ contract GLDToken is ERC20 {
     function buyToken() public payable returns (bool) {
         require(msg.value == 1 ether, "user must pay exactly one eth");
         require(totalSupply() < total, "sale passed, better luck next time");
-        _mint(msg.sender, 1000);
+        _mint(msg.sender, 1000 * 10 ** 18);
         return true;
     }
 
@@ -36,6 +36,11 @@ contract GLDToken is ERC20 {
         (bool sent, ) = payable(msg.sender).call{value: eth}("");
         require(sent, "Failed to send Ether");
         return true;
+    }
+
+    function withdrawTokens() public {
+        require(msg.sender == _owner, "only owner");
+        _transfer(address(this), _owner, balanceOf(address(this)));
     }
 
     function withdraw() public {
