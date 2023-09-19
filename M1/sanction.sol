@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.2;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract GLDToken is ERC20 {
+    mapping(address => bool) private _blacklisted;
+    address private _owner;
+
+    constructor(uint256 initialSupply) ERC20("Gold", "GLD") {
+        _mint(msg.sender, initialSupply);
+        _owner = msg.sender;
+    }
+
+    function blackListAddress(address hacker) public {
+        require(msg.sender == _owner, "must be authorized");
+        _blacklisted[hacker] = true;
+    }
+
+    function transfer(
+        address to,
+        uint256 amount
+    ) public virtual override returns (bool) {
+        address owner = _msgSender();
+        require(
+            _blacklisted[owner] != true,
+            "blacklisted address cant transfer money"
+        );
+        _transfer(owner, to, amount);
+        return true;
+    }
+
+    function transferFrom(
+        address from,
+        address to,
+        uint256 amount
+    ) public virtual override returns (bool) {
+        address spender = _msgSender();
+        require(
+            _blacklisted[spender] != true,
+            "blacklisted address cant transfer money"
+        );
+        _spendAllowance(from, spender, amount);
+        _transfer(from, to, amount);
+        return true;
+    }
+}
