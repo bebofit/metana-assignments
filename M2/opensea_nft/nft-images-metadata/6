@@ -1,0 +1,15 @@
+{
+    "image": "ipfs://QmPa3YKcGSYB7vLy78scecp3KQcvbMjJxEHFKVQtQnvbgx/6.jpeg",
+    "attributes": [
+        {
+        "trait_type": "Background",
+        "value": "M1 Orange"
+        },
+        {
+        "trait_type": "Character",
+        "value": "Spider Man"
+        }
+        ],
+    "name": "Spider Man M1 Orange",
+    "description": "Metana assignment 2"
+}
