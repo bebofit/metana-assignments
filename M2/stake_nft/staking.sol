@@ -15,12 +15,8 @@ contract StakeNFT is ERC721Holder {
     uint256 constant stakingTime = 24 hours;
     uint256 constant reward = 10 * 10 ** 18;
 
-    struct StakedTokenProps {
-        uint256 lastTimeStaked;
-        bool isStaked;
-    }
     struct Staker {
-        mapping(uint256 => StakedTokenProps) stakedTokens;
+        mapping(uint256 => uint256) stakedTokensTime;
         uint256 balance;
         uint256 rewardsReleased;
         uint256 totalTokens;
@@ -30,22 +26,21 @@ contract StakeNFT is ERC721Holder {
     mapping(uint256 => address) public tokenOwner;
 
     event Staked(
-        address owner,
+        address indexed owner,
         uint256 amount,
         uint256 timestamp,
         uint256 balance
     );
-    event Unstaked(address owner, uint256 amount);
+    event Unstaked(address indexed owner, uint256 amount);
 
-    event BOO(
-        uint256 time,
-        uint256 numberOfStacks,
-        uint256 balance,
-        bool isStackedAlot
-    );
+    error NotAuth(string msg);
+    error NotNFTOWNER();
+    error NoNFTStaked();
 
     modifier isOwner() {
-        require(msg.sender == _owner, "only owner");
+        if (msg.sender != _owner) {
+            revert NotAuth("not authorized");
+        }
         _;
     }
 
@@ -60,51 +55,32 @@ contract StakeNFT is ERC721Holder {
     }
 
     function _stake(address _user, uint256 _tokenId) internal {
-        require(
-            nft.ownerOf(_tokenId) == _user,
-            "user must be the owner of the token"
-        );
+        if (nft.ownerOf(_tokenId) != _user) {
+            revert NotNFTOWNER();
+        }
         Staker storage staker = stakers[_user];
-        StakedTokenProps storage stakableToken = staker.stakedTokens[_tokenId];
-        require(!stakableToken.isStaked, "token already staked");
-        require(
-            block.timestamp - stakableToken.lastTimeStaked > stakingTime,
-            "time hasnot passed yet till you can stake this token again please wait"
-        );
-        stakableToken.lastTimeStaked = block.timestamp;
-        stakableToken.isStaked = true;
+        uint256 stakableToken = staker.stakedTokensTime[_tokenId];
+        stakableToken = block.timestamp;
         tokenOwner[_tokenId] = _user;
         nft.safeTransferFrom(_user, address(this), _tokenId);
         staker.totalTokens++;
-        emit Staked(
-            _user,
-            _tokenId,
-            stakableToken.lastTimeStaked,
-            staker.balance
-        );
+        emit Staked(_user, _tokenId, stakableToken, staker.balance);
         stakedTotal++;
     }
 
     function unstake(uint256 _tokenId) public {
-        uint256 time = stakers[msg.sender]
-            .stakedTokens[_tokenId]
-            .lastTimeStaked;
-        uint256 numberOfStacks = ((block.timestamp - time)) / stakingTime;
-        if (time > 0 && numberOfStacks > 0) {
-            claimReward();
+        if (stakers[msg.sender].stakedTokensTime[_tokenId] > 0) {
+            claimReward(msg.sender, _tokenId);
         }
         _unstake(msg.sender, _tokenId);
     }
 
     function _unstake(address _user, uint256 _tokenId) internal {
-        require(
-            tokenOwner[_tokenId] == _user,
-            "Nft Staking System: user must be the owner of the staked nft"
-        );
+        if (tokenOwner[_tokenId] != _user) {
+            revert NotNFTOWNER();
+        }
         Staker storage staker = stakers[_user];
-        StakedTokenProps storage stakableToken = staker.stakedTokens[_tokenId];
-        require(stakableToken.isStaked, "cannot unstake token");
-        stakableToken.isStaked = false;
+        delete staker.stakedTokensTime[_tokenId];
         delete tokenOwner[_tokenId];
 
         nft.safeTransferFrom(address(this), _user, _tokenId);
@@ -113,25 +89,49 @@ contract StakeNFT is ERC721Holder {
         stakedTotal--;
     }
 
-    function updateReward(address _user) public {
+    function claimReward(address _user, uint256 tokenId) public {
+        if (tokenOwner[tokenId] != _user) {
+            revert NotNFTOWNER();
+        }
+        Staker storage staker = stakers[_user];
+        uint256 stackedToken = staker.stakedTokensTime[tokenId];
+        if (
+            stackedToken + stakingTime < block.timestamp + stakingTime &&
+            stackedToken > 0
+        ) {
+            staker.balance +=
+                (reward * (block.timestamp - uint(stackedToken))) /
+                stakingTime;
+            staker.stakedTokensTime[tokenId] = block.timestamp;
+        }
+        require(stakers[msg.sender].balance > 0, "0 rewards yet");
+        uint256 rewardAmount = stakers[msg.sender].balance;
+        stakers[msg.sender].rewardsReleased += rewardAmount;
+        stakers[msg.sender].balance = 0;
+        rewardsToken.mintToken(msg.sender, rewardAmount);
+    }
+
+    function updateReward(address _user) internal {
         Staker storage staker = stakers[_user];
         for (uint256 i = 0; i < staker.totalTokens; i++) {
-            StakedTokenProps storage stackedToken = staker.stakedTokens[i];
+            uint256 stackedToken = staker.stakedTokensTime[i];
             if (
-                stackedToken.lastTimeStaked < block.timestamp + stakingTime &&
-                stackedToken.lastTimeStaked > 0
+                stackedToken + stakingTime < block.timestamp + stakingTime &&
+                stackedToken > 0
             ) {
-                uint256 numberOfStacks = (
-                    (block.timestamp - uint(stackedToken.lastTimeStaked))
-                ) / stakingTime;
-
-                staker.balance += reward * numberOfStacks;
-                stackedToken.lastTimeStaked = block.timestamp;
+                staker.balance +=
+                    (reward * (block.timestamp - uint(stackedToken))) /
+                    stakingTime;
+                staker.stakedTokensTime[i] = block.timestamp;
             }
         }
     }
 
-    function claimReward() public {
+    function claimRewardAll() public {
+        if (stakers[msg.sender].totalTokens == 0) {
+            revert NoNFTStaked();
+        }
+
         updateReward(msg.sender);
         require(stakers[msg.sender].balance > 0, "0 rewards yet");
 

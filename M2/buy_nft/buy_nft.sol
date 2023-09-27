@@ -11,6 +11,8 @@ interface IBuyNFT {
     function viewBalance() external view returns (uint256);
 }
 
+error NotAuthorized();
+
 contract BuyNFT is ERC721, IBuyNFT {
     uint256 public tokenSupply = 0;
     uint256 public constant totalSupply = 10;
@@ -19,7 +21,7 @@ contract BuyNFT is ERC721, IBuyNFT {
     IERC20 immutable _tokenAddress;
 
     modifier isOwner() {
-        require(msg.sender == _owner, "not contract owner");
+        if (msg.sender != _owner) revert NotAuthorized();
         _;
     } // continue executing rest of method body
 

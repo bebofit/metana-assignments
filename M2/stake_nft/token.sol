@@ -13,21 +13,22 @@ contract StakeToken is ERC20 {
     address private _owner;
     address minter;
 
+    error NotAuthorized();
+
     constructor(uint256 initialSupply) ERC20("STAKE", "STK") {
         _owner = msg.sender;
         _mint(msg.sender, initialSupply * 10 ** decimals());
     }
 
     modifier isOwner() {
-        require(msg.sender == _owner, "only owner");
+        if (msg.sender != _owner) revert NotAuthorized();
         _;
     }
 
     modifier canMint() {
-        require(
-            msg.sender == _owner || msg.sender == minter,
-            "cannot mint token"
-        );
+        if (msg.sender != _owner && msg.sender != minter) {
+            revert NotAuthorized();
+        }
         _;
     }
 

@@ -10,8 +10,10 @@ contract SimpleNFT is ERC721 {
     uint256 public constant price = 1 ether;
     address immutable _owner;
 
+    error NotAuthorized();
+
     modifier isOwner() {
-        require(msg.sender == _owner, "not contract owner");
+        if (msg.sender != _owner) revert NotAuthorized();
         _;
     } // continue executing rest of method body
 
