@@ -1,0 +1,15 @@
+{
+    "image": "ipfs://QmQaCnnnch4p4tpAEQ2PRMPX6K3TLBxWMhiarRLd6GMSoZ/silver.webp",
+    "attributes": [
+        {
+        "trait_type": "Background",
+        "value": "M1 Orange"
+        },
+        {
+        "trait_type": "Character",
+        "value": "Hawkeye"
+        }
+        ],
+    "name": "Hawkeye M1 Orange",
+    "description": "Metana assignment 2"
+}
