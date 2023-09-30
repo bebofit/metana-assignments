@@ -23,6 +23,7 @@ contract StakeNFT is ERC721Holder {
     }
 
     mapping(address => Staker) public stakers;
+    mapping(address => uint256) public stakedTokensTime;
     mapping(uint256 => address) public tokenOwner;
 
     event Staked(
@@ -36,6 +37,7 @@ contract StakeNFT is ERC721Holder {
     error NotAuth(string msg);
     error NotNFTOWNER();
     error NoNFTStaked();
+    error UnknownNFT();
 
     modifier isOwner() {
         if (msg.sender != _owner) {
@@ -50,8 +52,15 @@ contract StakeNFT is ERC721Holder {
         _owner = msg.sender;
     }
 
-    function stake(uint256 tokenId) public {
+    function onERC721Received(
+        address,
+        address,
+        uint256 tokenId,
+        bytes memory
+    ) public override returns (bytes4) {
+        if (msg.sender != address(nft)) revert UnknownNFT();
         _stake(msg.sender, tokenId);
+        return 0x12345678;
     }
 
     function _stake(address _user, uint256 _tokenId) internal {
