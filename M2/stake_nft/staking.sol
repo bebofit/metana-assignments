@@ -53,13 +53,13 @@ contract StakeNFT is ERC721Holder {
     }
 
     function onERC721Received(
-        address,
+        address _from,
         address,
         uint256 tokenId,
         bytes memory
     ) public override returns (bytes4) {
         if (msg.sender != address(nft)) revert UnknownNFT();
-        _stake(msg.sender, tokenId);
+        _stake(_from, tokenId);
         return 0x12345678;
     }
 
@@ -71,7 +71,6 @@ contract StakeNFT is ERC721Holder {
         uint256 stakableToken = staker.stakedTokensTime[_tokenId];
         stakableToken = block.timestamp;
         tokenOwner[_tokenId] = _user;
-        nft.safeTransferFrom(_user, address(this), _tokenId);
         staker.totalTokens++;
         emit Staked(_user, _tokenId, stakableToken, staker.balance);
         stakedTotal++;
