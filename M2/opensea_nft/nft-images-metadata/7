@@ -1,0 +1,15 @@
+{
+    "image": "ipfs://QmPa3YKcGSYB7vLy78scecp3KQcvbMjJxEHFKVQtQnvbgx/7.jpeg",
+    "attributes": [
+        {
+        "trait_type": "Background",
+        "value": "M1 Orange"
+        },
+        {
+        "trait_type": "Character",
+        "value": "Ghost Rider"
+        }
+        ],
+    "name": "Ghost Rider M1 Orange",
+    "description": "Metana assignment 2"
+}
