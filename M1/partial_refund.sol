@@ -1,60 +1,65 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract GLDToken is ERC20 {
-    mapping(address => bool) private _blacklisted;
-    address private _owner;
-    uint total = 1000000 * 10 * 18;
+contract PartialRefund is ERC20 {
+    address private immutable _owner;
+    uint256 constant TOTAL = 1e6 * 10 ** 18;
+    error NotAuth();
+
+    modifier onlyOwner() {
+        if (msg.sender != _owner) {
+            revert NotAuth();
+        }
+        _;
+    }
 
     constructor(uint256 initialSupply) ERC20("Gold", "GLD") {
-        _mint(msg.sender, initialSupply);
+        uint256 tokens = initialSupply * 10 ** decimals();
+        _mint(msg.sender, tokens);
         _owner = msg.sender;
     }
 
     function buyToken() public payable returns (bool) {
         require(msg.value == 1 ether, "user must pay exactly one eth");
-        require(totalSupply() < total, "sale passed, better luck next time");
-        _mint(msg.sender, 1000 * 10 ** 18);
+        require(totalSupply() < TOTAL, "sale passed, better luck next time");
+        uint256 tokens = 1000 * 10 ** decimals();
+        if (balanceOf(address(this)) >= tokens) {
+            _transfer(address(this), msg.sender, tokens);
+        } else {
+            _mint(msg.sender, tokens);
+        }
         return true;
     }
 
     function sellBack(uint tokens) public returns (bool) {
+        uint256 realTokens = tokens * 10 ** decimals();
         require(
-            balanceOf(msg.sender) >= tokens,
+            balanceOf(msg.sender) >= realTokens,
             "cannot sellback more than what you have"
         );
-        require(tokens > 0, "tokens must be bigger than zero");
-        bool isApproved = approve(address(this), tokens);
-        require(isApproved, "cannot sellback not approved");
-        bool isTransfered = transfer(address(this), tokens);
-        require(isTransfered, "cannot sell to contract");
+        require(realTokens > 0, "tokens must be bigger than zero");
+        _transfer(msg.sender, address(this), realTokens);
         uint256 val = (tokens * 0.5 ether);
         uint256 eth = val / 1000;
         require(eth < address(this).balance, "cannot pay more than you have");
-        (bool sent, ) = payable(msg.sender).call{value: eth}("");
-        require(sent, "Failed to send Ether");
+        payable(msg.sender).transfer(eth);
         return true;
     }
 
-    function withdrawTokens() public {
-        require(msg.sender == _owner, "only owner");
+    function withdrawTokens() public onlyOwner {
         _transfer(address(this), _owner, balanceOf(address(this)));
     }
 
-    function withdraw() public {
-        require(msg.sender == _owner, "only owner");
+    function withdraw() public onlyOwner {
         uint256 amount = address(this).balance;
         require(amount > 0, "Nothing to withdraw; contract balance empty");
-
-        (bool sent, ) = _owner.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        payable(_owner).transfer(amount);
     }
 
     // Function to receive Ether. msg.data must be empty
-    receive() external payable {}
-
-    // Fallback function is called when msg.data is not empty
-    fallback() external payable {}
+    receive() external payable {
+        buyToken();
+    }
 }
