@@ -55,23 +55,21 @@ Forge.mintToken(uint256) (contracts/Forge.sol#50-103) uses timestamp for compari
         - block.timestamp - lastMint < coolDownMint (contracts/Forge.sol#51)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
 
-### solution ?
+### solution 
+it is safe to use since cool down is 1 min so even if manipulated wont make a difference 
 
 
 
 # Mutation 
-used universesimulator mutation 
+used sumo for mutation 
 
-## Partial Refund 
+Mutation Testing completed in 36.00 minutes 👋
+SuMo generated 439 mutants: 
+- 112 live; 
+- 310 killed; 
+- 17 stillborn; 
+- 0 equivalent; 
+- 0 redundant; 
+- 0 timed-out. 
 
-0 VALID MUTANTS
-666 INVALID MUTANTS
-0 REDUNDANT MUTANTS
-Valid Percentage: 0.0%
-
-## Forge
-0 VALID MUTANTS
-1363 INVALID MUTANTS
-0 REDUNDANT MUTANTS
-Valid Percentage: 0.0%
-
+Mutation Score: 73.46 %
