@@ -1,0 +1,2 @@
+after analyzing the graphs it seems that the BaseFee and Gas Usage Ratio are inversely proportional
+which make sense as the higher the fee the less incentive to use gas
