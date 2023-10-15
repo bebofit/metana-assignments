@@ -1,14 +1,12 @@
 const { Network, Alchemy } = require("alchemy-sdk");
 
-// should be an env var
 const settings = {
-  apiKey: "4pjN5JKD-NLS5h1VjZlqm3gfn8pvD_V3", // Replace with your Alchemy API Key.
+  apiKey: process.env.REACT_APP_ALCHEMY_KEY, // Replace with your Alchemy API Key.
   network: Network.ETH_MAINNET, // Replace with your network.
 };
 
 const alchemy = new Alchemy(settings);
 
-// should be an env var
 const USDTAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
 
 export async function GetCoinChartData() {
