@@ -2,9 +2,16 @@ pragma solidity ^0.8.0;
 
 // the RLP encoding of a 20-byte address is: 0xd6, 0x94 . And for all integers less than 0x7f, its encoding is just its own byte value. So the RLP of 1 is 0x01.
 contract Attack {
-    function recover(address sender) external pure returns (address) {
+    function recover(
+        address recoveryFactoryContract
+    ) external pure returns (address) {
         bytes32 hash = keccak256(
-            abi.encodePacked(bytes1(0xd6), bytes1(0x94), sender, bytes1(0x01))
+            abi.encodePacked(
+                bytes1(0xd6),
+                bytes1(0x94),
+                recoveryFactoryContract,
+                bytes1(0x01)
+            )
         );
         address addr = address(uint160(uint256(hash)));
         return addr;
