@@ -35,6 +35,13 @@ contract Forge is ERC1155 {
         _;
     }
 
+    modifier isValidSubTokenId(uint256 tokenId) {
+        if (tokenId > 2) {
+            revert InvalidTokenId();
+        }
+        _;
+    }
+
     constructor()
         ERC1155("ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/")
     {
@@ -103,9 +110,18 @@ contract Forge is ERC1155 {
     }
 
     // if you want to burn your token but warning it doesnt do any app functionality
-    function burn(uint256 tokenId) public isValidTokenId(tokenId) {
+    function burn(
+        uint256 tokenId,
+        uint256 newTokenId
+    ) public isValidTokenId(tokenId) isValidSubTokenId(newTokenId) {
         if (balanceOf(msg.sender, tokenId) > 0) {
             _burn(msg.sender, tokenId, 1);
+            if (
+                tokenId != newTokenId &&
+                (tokenId == SILVER || tokenId == GOLD || tokenId == BRONZE)
+            ) {
+                _mint(msg.sender, newTokenId, 1, "");
+            }
         } else {
             revert NothingToBurn();
         }

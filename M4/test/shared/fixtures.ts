@@ -17,9 +17,7 @@ export async function getSigners(): Promise<Signers> {
   return { deployer, alice, bob };
 }
 
-export async function unitPartialFundFixture(
-  amount?: number
-): Promise<UnitPartialFundFixtureType> {
+export async function unitPartialFundFixture(): Promise<UnitPartialFundFixtureType> {
   const { deployer } = await getSigners();
 
   const partialRefundFactory: ContractFactory = await ethers.getContractFactory(
@@ -28,7 +26,7 @@ export async function unitPartialFundFixture(
 
   const partialContract = (await partialRefundFactory
     .connect(deployer)
-    .deploy(amount ?? 100)) as PartialRefund;
+    .deploy()) as PartialRefund;
 
   return { partialContract };
 }

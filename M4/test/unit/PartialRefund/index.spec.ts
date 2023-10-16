@@ -1,12 +1,11 @@
 import { ethers } from "hardhat";
 import { expect } from "chai";
-import { unitPartialFundFixture } from "../../shared/fixtures";
 
 export const runPartialFundTest = (): void => {
   //   // to silent warning for duplicate definition of Transfer event
   //   ethers.utils.Logger.setLogLevel(ethers.utils.Logger.levels.OFF);
   describe(`#buyToken`, function () {
-    it(`should buy Token...`, async function () {
+    it(`should buy Token from minting...`, async function () {
       const beforeBalance = await this.partialRefund
         .connect(this.signers.alice)
         .balanceOf(await this.signers.alice.getAddress());
@@ -29,21 +28,33 @@ export const runPartialFundTest = (): void => {
         ethers.parseEther("9999"),
         ethers.parseEther("0.01")
       );
+      expect(await this.partialRefund.totalSupply()).to.equal(
+        BigInt("1000000000000000000000")
+      );
+    });
+
+    it(`should buy token by transfering remaining token in address and mint rest`, async function () {
+      await this.partialRefund.buyToken({
+        value: ethers.parseEther("1.0"),
+      });
+      await this.partialRefund.sellBack(500);
+      const address = await this.partialRefund.getAddress();
+      const balance = await this.partialRefund.balanceOf(address);
+      expect(balance).to.equal(BigInt("500000000000000000000"));
+      await this.partialRefund.connect(this.signers.alice).buyToken({
+        value: ethers.parseEther("1.0"),
+      });
+      const balanceAfter = await this.partialRefund.balanceOf(address);
+      expect(balanceAfter).to.equal(0);
+      expect(await this.partialRefund.totalSupply()).to.equal(
+        BigInt("1500000000000000000000")
+      );
     });
 
     it(`should revert if no eth was provided...`, async function () {
-      await expect(
-        this.partialRefund.connect(this.signers.alice).buyToken()
-      ).to.be.revertedWith("user must pay exactly one eth");
-    });
-
-    it(`should revert if total supply was finished...`, async function () {
-      const fixture = await unitPartialFundFixture(1000000);
-      await expect(
-        fixture.partialContract.connect(this.signers.alice).buyToken({
-          value: ethers.parseEther("1.0"),
-        })
-      ).to.be.revertedWith("sale passed, better luck next time");
+      await expect(this.partialRefund.connect(this.signers.alice).buyToken())
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("user must pay exactly one eth");
     });
 
     it(`should not mint if address already has token...`, async function () {
@@ -59,6 +70,40 @@ export const runPartialFundTest = (): void => {
       });
       const balanceAfter = await this.partialRefund.balanceOf(address);
       expect(balanceAfter).to.equal(0);
+      expect(await this.partialRefund.totalSupply()).to.equal(
+        BigInt("1000000000000000000000")
+      );
+    });
+
+    it(`should buy Token from receive...`, async function () {
+      const beforeBalance = await this.partialRefund
+        .connect(this.signers.alice)
+        .balanceOf(await this.signers.alice.getAddress());
+      expect(beforeBalance).to.equal(0);
+      const ether = await ethers.provider.getBalance(
+        await this.signers.alice.getAddress()
+      );
+      expect(ether).to.equal(ethers.parseEther("10000.0"));
+
+      const address = await this.partialRefund.getAddress();
+      await this.signers.alice.sendTransaction({
+        to: address,
+        value: ethers.parseEther("1.0"), // Sends exactly 1.0 ether
+      });
+      const afterBalance = await this.partialRefund
+        .connect(this.signers.alice)
+        .balanceOf(await this.signers.alice.getAddress());
+      expect(afterBalance).to.equal(BigInt("1000000000000000000000"));
+      const etherAfter = await ethers.provider.getBalance(
+        await this.signers.alice.getAddress()
+      );
+      expect(etherAfter).to.closeTo(
+        ethers.parseEther("9999"),
+        ethers.parseEther("0.01")
+      );
+      expect(await this.partialRefund.totalSupply()).to.equal(
+        BigInt("1000000000000000000000")
+      );
     });
   });
 
@@ -110,16 +155,18 @@ export const runPartialFundTest = (): void => {
     it(`should revert if user has no token...`, async function () {
       await expect(
         this.partialRefund.connect(this.signers.alice).sellBack(1000)
-      ).to.be.revertedWith("cannot sellback more than what you have");
+      )
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("cannot sellback more than what you have");
     });
 
     it(`should revert if parameter is 0...`, async function () {
       await this.partialRefund.connect(this.signers.alice).buyToken({
         value: ethers.parseEther("1.0"),
       });
-      await expect(
-        this.partialRefund.connect(this.signers.alice).sellBack(0)
-      ).to.be.revertedWith("tokens must be bigger than zero");
+      await expect(this.partialRefund.connect(this.signers.alice).sellBack(0))
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("tokens must be bigger than zero");
     });
 
     it(`should revert if user tries to sell back more than what he have...`, async function () {
@@ -128,7 +175,9 @@ export const runPartialFundTest = (): void => {
       });
       await expect(
         this.partialRefund.connect(this.signers.alice).sellBack(2000)
-      ).to.be.revertedWith("cannot sellback more than what you have");
+      )
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("cannot sellback more than what you have");
     });
 
     it(`should not withdraw if contract has no eth...`, async function () {
@@ -138,7 +187,9 @@ export const runPartialFundTest = (): void => {
       await this.partialRefund.withdraw();
       await expect(
         this.partialRefund.connect(this.signers.alice).sellBack(1000)
-      ).to.be.revertedWith("cannot pay more than you have");
+      )
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("cannot pay more than you have");
     });
   });
 
@@ -158,9 +209,9 @@ export const runPartialFundTest = (): void => {
     });
 
     it(`should not withdraw if contract has no eth...`, async function () {
-      await expect(this.partialRefund.withdraw()).to.be.revertedWith(
-        "Nothing to withdraw; contract balance empty"
-      );
+      await expect(this.partialRefund.withdraw())
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("Nothing to withdraw; contract balance empty");
     });
 
     it(`should not withdraw if not owner...`, async function () {
@@ -181,7 +232,7 @@ export const runPartialFundTest = (): void => {
         await this.signers.deployer.getAddress()
       );
       // owner + alice
-      expect(balance).to.equal("1100000000000000000000");
+      expect(balance).to.equal("1000000000000000000000");
     });
 
     it(`should not withdrawTokens if not owner...`, async function () {
@@ -197,7 +248,9 @@ export const runPartialFundTest = (): void => {
         to: await this.partialRefund.getAddress(),
         data: "0x",
       });
-      await expect(tx).to.be.revertedWith("user must pay exactly one eth");
+      await expect(tx)
+        .to.revertedWithCustomError(this.partialRefund, "Forbidden")
+        .withArgs("user must pay exactly one eth");
     });
 
     it(`should buy Token in receive...`, async function () {

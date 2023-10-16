@@ -31,7 +31,221 @@ export const runForgeTest = (): void => {
         await this.forgeContract.balanceOf(deployerAddress, 1)
       ).to.be.equal(1);
 
-      await this.forgeContract.burn(1);
+      await this.forgeContract.burn(1, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+    });
+
+    it("should burn gold to silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(0, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(1);
+    });
+
+    it("should burn gold to bronze", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(0, 2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(1);
+    });
+
+    it("should burn silver to gold", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(1, 0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(1);
+    });
+
+    it("should burn silver to bronze", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(1, 2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(1);
+    });
+
+    it("should burn bronze to gold", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(2, 0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 0)
+      ).to.be.equal(1);
+    });
+
+    it("should burn bronze to silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(2, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(1);
+    });
+
+    it("should burn and not mint the same token", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+      await this.forgeContract.mintToken(2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(1);
+
+      await this.forgeContract.burn(2, 2);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 2)
+      ).to.be.equal(0);
+    });
+
+    it("should burn thor and mint no silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      await this.forgeContract.mintToken(0);
+      await time.increase(70);
+      await this.forgeContract.mintToken(1);
+      await time.increase(70);
+      await this.forgeContract.mintToken(3);
+      await this.forgeContract.burn(3, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 3)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+    });
+
+    it("should burn OBLIVION_SWORD and mint no silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      await this.forgeContract.mintToken(1);
+      await time.increase(70);
+      await this.forgeContract.mintToken(2);
+      await time.increase(70);
+      await this.forgeContract.mintToken(4);
+      await this.forgeContract.burn(4, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 4)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+    });
+
+    it("should burn CAPTAIN_SHIELD and mint no silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      await this.forgeContract.mintToken(0);
+      await time.increase(70);
+      await this.forgeContract.mintToken(2);
+      await time.increase(70);
+      await this.forgeContract.mintToken(5);
+      await this.forgeContract.burn(5, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 5)
+      ).to.be.equal(0);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 1)
+      ).to.be.equal(0);
+    });
+
+    it("should burn DANTE_KEY and mint no silver", async function () {
+      const deployerAddress = await this.signers.deployer.getAddress();
+      await this.forgeContract.mintToken(0);
+      await time.increase(70);
+      await this.forgeContract.mintToken(1);
+      await time.increase(70);
+      await this.forgeContract.mintToken(2);
+      await time.increase(70);
+      await this.forgeContract.mintToken(6);
+      await this.forgeContract.burn(6, 1);
+      expect(
+        await this.forgeContract.balanceOf(deployerAddress, 6)
+      ).to.be.equal(0);
       expect(
         await this.forgeContract.balanceOf(deployerAddress, 1)
       ).to.be.equal(0);
@@ -43,7 +257,7 @@ export const runForgeTest = (): void => {
         await this.forgeContract.balanceOf(deployerAddress, 1)
       ).to.be.equal(0);
 
-      await expect(this.forgeContract.burn(1)).to.be.revertedWithCustomError(
+      await expect(this.forgeContract.burn(1, 0)).to.be.revertedWithCustomError(
         this.forgeContract,
         `NothingToBurn`
       );
@@ -53,7 +267,12 @@ export const runForgeTest = (): void => {
     });
 
     it("should not burn if not a valid token id", async function () {
-      await expect(this.forgeContract.burn(10)).to.be.revertedWithCustomError(
+      await expect(
+        this.forgeContract.burn(10, 0)
+      ).to.be.revertedWithCustomError(this.forgeContract, `InvalidTokenId`);
+    });
+    it("should not burn if not a valid new token id", async function () {
+      await expect(this.forgeContract.burn(0, 3)).to.be.revertedWithCustomError(
         this.forgeContract,
         `InvalidTokenId`
       );
