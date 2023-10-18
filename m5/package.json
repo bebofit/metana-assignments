@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.11",
     "alchemy-sdk": "^2.10.1",
     "chart.js": "^4.4.0",
+    "ethers": "^6.8.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",

@@ -1,22 +1,24 @@
-import React, { useEffect } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
   PointElement,
+  BarElement,
   LineElement,
   Title,
   Tooltip,
   Legend,
 } from "chart.js";
-import { GetCoinChartData, getBlocksFeePrices } from "./alchemy/index";
-import MainChart from "./MainChart";
-import { ChartData } from "chart.js";
+import { listenToWS } from "./alchemy/index";
+import CoinChart from "./CoinChart";
+import GasChart from "./GasChart";
+import { useEffect, useState } from "react";
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
+  BarElement,
   LineElement,
   Title,
   Tooltip,
@@ -24,38 +26,18 @@ ChartJS.register(
 );
 
 export default function App() {
-  const [coinData, setCoinData] =
-    React.useState<ChartData<"line", number[], string>>();
-  const [gasData, setGasData] = React.useState<{
-    basefee: ChartData<"line", number[], string>;
-    gasUsage: ChartData<"line", number[], string>;
-  }>();
+  const [blockNumber, setBlockNumber] = useState<number>(0);
 
   useEffect(() => {
-    async function data() {
-      const coinD = await GetCoinChartData();
-      setCoinData(coinD);
-      const gasD = await getBlocksFeePrices();
-      setGasData(gasD);
-    }
-
-    const intervalId = setInterval(async () => {
-      //assign interval to a variable to clear it.
-      const coinD = await GetCoinChartData();
-      setCoinData(coinD);
-      const gasD = await getBlocksFeePrices();
-      setGasData(gasD);
-    }, 15000);
-
-    data();
-    return () => clearInterval(intervalId);
+    listenToWS((bNumber: number) => {
+      setBlockNumber(bNumber);
+    });
   }, []);
 
   return (
     <>
-      {coinData && <MainChart data={coinData} title="USDT Coin Volume" />}
-      {gasData && <MainChart data={gasData.basefee} title="Base Fee" />}
-      {gasData && <MainChart data={gasData.gasUsage} title="Gas Usage Ratio" />}
+      <CoinChart blockNumber={blockNumber} />
+      <GasChart blockNumber={blockNumber} />
     </>
   );
 }
