@@ -1,0 +1,5 @@
+solution is to send 4 wei. because
+code size is 10 
+so we need to send 4 
+10 -4 = 6 in stack
+which is the instruction where JUMPSET exist

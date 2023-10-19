@@ -1,0 +1,5 @@
+the answer is 16
+
+becuse 16 * 16 = 256 which is 100 in hex decimal 
+
+that is equal to the 100 and eq will be 1 so JUMPI will work

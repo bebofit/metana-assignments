@@ -1,0 +1,5 @@
+the solution is 0x000000000000000000000000000000000000000000000000000000000000000a
+
+because call CALLDATALOAD looks for the offset of the index in 32bytes and index is 0
+
+so this the JUMPSET location

@@ -1,0 +1,6 @@
+the solution is 
+0x11111111
+
+each two hex = 1 size
+
+we need 4 in stack to jump

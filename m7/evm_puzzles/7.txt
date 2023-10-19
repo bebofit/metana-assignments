@@ -1,0 +1,11 @@
+the solution is: 0x60016000f3
+
+because since create sends the call data into a new playground to execute some op cpde
+we need some opcodes that reutrn 00 bytes
+
+this
+[00]	PUSH1	01
+[02]	PUSH1	00
+[04]	RETURN
+
+returns 00

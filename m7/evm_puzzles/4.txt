@@ -1,0 +1,7 @@
+the solution is 6
+
+c = 1100
+a = 1010
+
+XORign them
+= 0110 = 6
