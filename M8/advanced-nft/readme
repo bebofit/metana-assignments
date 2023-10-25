@@ -1,0 +1,19 @@
+Gas Question: 
+
+20,000 (from zero to one zero) × 55 gwei × $1785.04 / 1 Billion = $1.5 per address/mint 
+so let us say 10 address = $15 
+
+20,000 for setting bitmap = $1.5 on consturcting
+then 5,000 for changing one bit in the map to true (from non-zero to non-zero) = 0.3 cents per address/mint
+
+
+Should you be using pausable or nonReentrant in your NFT? Why or why not?
+You can use pausable if you are afraid of an exploit and want to make sure their is a safety net,
+same goes to nonReentrant. However, it comes with a cost, gas cost. You can bypass them if you did
+a great audit and 100% sure it is ready to go. it depends on your risk/reward ratio. 
+
+
+What trick does OpenZeppelin use to save gas on the nonReentrant modifier?
+
+ Booleans are more expensive than uint256 or any type that takes up a full word because each write operation emits an extra SLOAD to first read the  slot's contents, replace the bits taken up by the boolean, and then write back. So, two state constant variables which makes the deployment a little bit
+ expensive but the modifier is a lot cheaper now
