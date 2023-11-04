@@ -1,0 +1,440 @@
+Hash,File,Operator,Start,End,StartLine,EndLine,Original,Replacement,Status,Time(ms)
+m12623532,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1040,1043,32,32," > "," >=  ",killed,5759
+m707c3e07,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1040,1043,32,32," > "," <=  ",killed,5070
+m63ad46b1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1040,1043,32,32," > "," < ",killed,4938
+m9ca91884,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1040,1043,32,32," > "," != ",killed,4885
+m75a16a1f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1040,1043,32,32," > "," == ",killed,4871
+m7993386f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1534,1537,51,51," < "," <= ",live,6162
+m6b595665,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1534,1537,51,51," < "," >=  ",killed,4995
+mbbfa1e5d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1534,1537,51,51," < "," > ",killed,4932
+m0a24fb26,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1534,1537,51,51," < "," != ",killed,4979
+ma2a0add5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1534,1537,51,51," < "," == ",killed,6054
+mf54356df,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1523,1526,51,51," - "," + ",killed,5976
+m7e75e80c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1523,1526,51,51," - "," * ",killed,4918
+m3b7a674f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1523,1526,51,51," - "," / ",killed,4891
+m86b813b1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1523,1526,51,51," - "," ** ",killed,4953
+m221d322b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1523,1526,51,51," - "," % ",killed,4905
+m07577730,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1848,1852,58,58," || "," && ",killed,4894
+m094b0ed1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1827,1831,58,58," || "," && ",killed,4956
+m19831f75,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1819,1823,58,58," == "," <= ",live,6071
+m8714f25b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1819,1823,58,58," == "," >= ",killed,5255
+ma332e1a7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1819,1823,58,58," == ","  < ",killed,5056
+mde4a5fb7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1819,1823,58,58," == ","  > ",killed,5014
+m74573b98,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1819,1823,58,58," == "," != ",killed,5022
+m04c35044,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1838,1842,58,58," == "," <= ",live,6213
+mff6cc10a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1838,1842,58,58," == "," >= ",killed,5240
+mbefc6e14,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1838,1842,58,58," == ","  < ",killed,4921
+ma5c71f68,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1838,1842,58,58," == ","  > ",killed,4923
+m1823c0ad,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1838,1842,58,58," == "," != ",killed,5088
+m39498ecd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1859,1863,58,58," == "," <= ",live,5996
+mef677126,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1859,1863,58,58," == "," >= ",killed,5169
+m6ec14037,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1859,1863,58,58," == ","  < ",killed,5189
+m41995a10,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1859,1863,58,58," == ","  > ",killed,5048
+m652d1884,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1859,1863,58,58," == "," != ",killed,5066
+ma7f381fe,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1980,1984,61,61," == "," <= ",live,5959
+m4e7b2ccb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1980,1984,61,61," == "," >= ",killed,5282
+m6cb1d3e2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1980,1984,61,61," == ","  < ",killed,5121
+mac7444ea,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1980,1984,61,61," == ","  > ",killed,5107
+m84a9efb9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,1980,1984,61,61," == "," != ",killed,5126
+m04d0e662,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2024,2028,62,62," || "," && ",killed,5572
+md7756514,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2020,2023,62,62," < "," <= ",killed,5159
+m16181bd0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2020,2023,62,62," < "," >=  ",killed,5128
+mfd69bc32,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2020,2023,62,62," < "," > ",live,5937
+m00595f13,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2020,2023,62,62," < "," != ",live,5899
+mf7eb5032,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2020,2023,62,62," < "," == ",killed,5112
+md453b65a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2034,2037,62,62," < "," <= ",killed,5085
+me98f5653,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2034,2037,62,62," < "," >=  ",killed,5124
+m355c2309,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2034,2037,62,62," < "," > ",killed,5551
+m5bf135ff,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2034,2037,62,62," < "," != ",live,5893
+m5aa65556,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2034,2037,62,62," < "," == ",killed,5083
+m348517f5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2382,2386,71,71," == "," <= ",live,5875
+m667b9647,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2382,2386,71,71," == "," >= ",killed,5333
+m5c02c100,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2382,2386,71,71," == ","  < ",killed,5186
+mfecf285b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2382,2386,71,71," == ","  > ",killed,5298
+m008bb8c1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2382,2386,71,71," == "," != ",killed,5231
+mdf18050a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2430,2434,72,72," || "," && ",killed,5590
+mc7530d45,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2426,2429,72,72," < "," <= ",killed,5213
+m33a40b4b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2426,2429,72,72," < "," >=  ",killed,5209
+m48889ca9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2426,2429,72,72," < "," > ",live,5929
+mdca0aedc,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2426,2429,72,72," < "," != ",live,5968
+m4aab96ce,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2426,2429,72,72," < "," == ",killed,5292
+m8097df89,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2440,2443,72,72," < "," <= ",killed,5306
+m2eb622d1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2440,2443,72,72," < "," >=  ",killed,5271
+me042ea99,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2440,2443,72,72," < "," > ",killed,5677
+m3857ae51,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2440,2443,72,72," < "," != ",live,5892
+me83774a7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2440,2443,72,72," < "," == ",killed,5226
+ma92ea462,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2796,2800,81,81," == "," <= ",live,5931
+mcb4b7406,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2796,2800,81,81," == "," >= ",killed,5477
+ma13b85a7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2796,2800,81,81," == ","  < ",killed,5274
+maa07581f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2796,2800,81,81," == ","  > ",killed,5285
+m73a95f3b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2796,2800,81,81," == "," != ",killed,5371
+mc1ff9fcc,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2844,2848,82,82," || "," && ",killed,5654
+m0ed63741,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2840,2843,82,82," < "," <= ",killed,5306
+m08501412,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2840,2843,82,82," < "," >=  ",killed,5291
+mf66b53b2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2840,2843,82,82," < "," > ",live,5963
+m823a7a5a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2840,2843,82,82," < "," != ",live,5991
+ma8a04211,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2840,2843,82,82," < "," == ",killed,5290
+mcb18ad85,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2852,2855,82,82," < "," <= ",killed,5307
+m6bcb474f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2852,2855,82,82," < "," >=  ",killed,5345
+m04586e7e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2852,2855,82,82," < "," > ",killed,5701
+mbda30e44,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2852,2855,82,82," < "," != ",live,5928
+mc6b78c5b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,2852,2855,82,82," < "," == ",killed,5240
+mf0e11395,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3233,3237,92,92," || "," && ",killed,5883
+mbb52fa76,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3221,3225,92,92," || "," && ",live,5903
+m7a9bfacd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3217,3220,92,92," < "," <= ",killed,5434
+m7311d839,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3217,3220,92,92," < "," >=  ",killed,5446
+m182a8327,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3217,3220,92,92," < "," > ",live,5833
+mcb9a39f6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3217,3220,92,92," < "," != ",live,5913
+m5ca7cc44,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3217,3220,92,92," < "," == ",killed,5473
+md924c1eb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3229,3232,92,92," < "," <= ",killed,5490
+mfae77534,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3229,3232,92,92," < "," >=  ",killed,5483
+md1e5665a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3229,3232,92,92," < "," > ",live,5895
+m21cf4e35,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3229,3232,92,92," < "," != ",live,5881
+m3f11736f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3229,3232,92,92," < "," == ",killed,5497
+mfb2b861b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3243,3246,92,92," < "," <= ",killed,5387
+m7fe1ee8c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3243,3246,92,92," < "," >=  ",killed,5398
+mb75535cd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3243,3246,92,92," < "," > ",killed,5849
+mc4fce416,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3243,3246,92,92," < "," != ",live,5907
+mdec712a6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3243,3246,92,92," < "," == ",killed,5453
+m59b74f8f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3828,3831,107,107," > "," >=  ",killed,4898
+me490422c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3828,3831,107,107," > "," <=  ",killed,4901
+mb73273ab,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3828,3831,107,107," > "," < ",killed,4858
+m482da838,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3828,3831,107,107," > "," != ",live,5889
+ma4706ed7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,BOR,3828,3831,107,107," > "," == ",killed,4850
+m77f9c160,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CCD,1117,1245,38,42,"constructor()        ERC1155(""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/"")    {        _owner = msg.sender;    }",,stillborn,781
+mb13338fe,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1033,1044,32,32,tokenId > 6,true,killed,4815
+m9ad1cd3e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1033,1044,32,32,tokenId > 6,false,killed,4804
+mb2713261,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1508,1549,51,51,block.timestamp - lastMint < coolDownMint,true,killed,4876
+mbc13d463,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1508,1549,51,51,block.timestamp - lastMint < coolDownMint,false,killed,5900
+mbe6c464f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1812,1869,58,58,tokenId == GOLD || tokenId == SILVER || tokenId == BRONZE,true,killed,5158
+m8af85e92,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1812,1869,58,58,tokenId == GOLD || tokenId == SILVER || tokenId == BRONZE,false,killed,4992
+m5309af0e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1973,1996,61,61,tokenId == THORS_HAMMER,true,killed,5189
+mf3dd1e97,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,1973,1996,61,61,tokenId == THORS_HAMMER,false,killed,5076
+m6fdaef93,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2016,2038,62,62,gold < 1 || silver < 1,true,killed,5102
+me728b7b4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2016,2038,62,62,gold < 1 || silver < 1,false,killed,5602
+m66fb5051,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2375,2400,71,71,tokenId == OBLIVION_SWORD,true,killed,5300
+mfb0aaa32,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2375,2400,71,71,tokenId == OBLIVION_SWORD,false,killed,5172
+ma3bdf83e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2420,2444,72,72,bronze < 1 || silver < 1,true,killed,5248
+mb0c54f5a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2420,2444,72,72,bronze < 1 || silver < 1,false,killed,5553
+m150bb094,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2789,2814,81,81,tokenId == CAPTAIN_SHIELD,true,killed,5566
+me47c880f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2789,2814,81,81,tokenId == CAPTAIN_SHIELD,false,killed,5347
+md8aa8d68,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3187,3625,81,102," else {            if (bronze < 1 || gold < 1 || silver < 1) {                revert InSufficientTokens(                    ""must at least have one bronze and one gold and one sliver""                );            }            _burn(msg.sender, BRONZE, 1);            _burn(msg.sender, GOLD, 1);            _burn(msg.sender, SILVER, 1);            emit Forged(DANTE_KEY);            _mint(msg.sender, DANTE_KEY, 1, """");        }",,killed,5507
+ma556e6e2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2834,2856,82,82,bronze < 1 || gold < 1,true,killed,5398
+m753b69aa,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,2834,2856,82,82,bronze < 1 || gold < 1,false,killed,5658
+m2a90946b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3211,3247,92,92,bronze < 1 || gold < 1 || silver < 1,true,killed,5503
+mb5b30b94,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3211,3247,92,92,bronze < 1 || gold < 1 || silver < 1,false,killed,5828
+m48f6deef,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3798,3832,107,107,"balanceOf(msg.sender, tokenId) > 0",true,killed,4949
+mdf0b5c6b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3798,3832,107,107,"balanceOf(msg.sender, tokenId) > 0",false,killed,4901
+m2dae4c3f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,CSC,3888,3941,107,111," else {            revert NothingToBurn();        }",,killed,4870
+m39213c68,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,DLR,1341,1354,46,46,string memory,string storage,stillborn,982
+m24cafa74,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,EED,1885,1906,59,59,emit Minted(tokenId);,/* emit Minted(tokenId); */,live,5929
+mf7a9ccac,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,EED,2277,2303,69,69,emit Forged(THORS_HAMMER);,/* emit Forged(THORS_HAMMER); */,killed,5119
+m4e7383c0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,EED,2687,2715,79,79,emit Forged(OBLIVION_SWORD);,/* emit Forged(OBLIVION_SWORD); */,killed,5278
+m0777c76c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,EED,3095,3123,89,89,emit Forged(CAPTAIN_SHIELD);,/* emit Forged(CAPTAIN_SHIELD); */,killed,5301
+me79f7ecb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,EED,3543,3566,100,100,emit Forged(DANTE_KEY);,/* emit Forged(DANTE_KEY); */,killed,5541
+m049bb463,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,1427,1494,50,50,"function mintToken(uint256 tokenId) public isValidTokenId(tokenId) ","function mintToken(uint256 tokenId) external isValidTokenId(tokenId) ",live,5914
+m9cfb9b10,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,1427,1494,50,50,"function mintToken(uint256 tokenId) public isValidTokenId(tokenId) ","function mintToken(uint256 tokenId) internal isValidTokenId(tokenId) ",killed,5346
+mf88aae30,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,1427,1494,50,50,"function mintToken(uint256 tokenId) public isValidTokenId(tokenId) ","function mintToken(uint256 tokenId) private isValidTokenId(tokenId) ",killed,4877
+mbfe4e595,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,3722,3784,106,106,"function burn(uint256 tokenId) public isValidTokenId(tokenId) ","function burn(uint256 tokenId) external isValidTokenId(tokenId) ",live,6072
+m6fee6fe1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,3722,3784,106,106,"function burn(uint256 tokenId) public isValidTokenId(tokenId) ","function burn(uint256 tokenId) internal isValidTokenId(tokenId) ",killed,5020
+mff139192,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,FVR,3722,3784,106,106,"function burn(uint256 tokenId) public isValidTokenId(tokenId) ","function burn(uint256 tokenId) private isValidTokenId(tokenId) ",killed,4945
+mc17b6a37,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,block.number,killed,4897
+mf52e3622,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,block.difficulty,killed,6073
+m34f9acd1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,block.gaslimit,killed,5243
+maa34b3e3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,tx.gasprice,killed,5269
+mc4c5937d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,gasleft(),killed,5199
+m45f32f68,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1508,1523,51,51,block.timestamp,msg.value,stillborn,807
+m4ef946ce,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,block.number,killed,5942
+md3ab2a57,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,block.difficulty,killed,5157
+mb90b794f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,block.gaslimit,killed,6049
+m4b263f0d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,tx.gasprice,killed,5993
+md684ed84,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,gasleft(),killed,6038
+mcd2b58d1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,GVR,1619,1634,54,54,block.timestamp,msg.value,stillborn,812
+mb6a20160,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,453,454,17,17,0,1,killed,5043
+ma20543d6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,493,494,18,18,1,0,killed,4933
+m80d81c2c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,493,494,18,18,1,2,killed,5030
+mdd049864,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,533,534,19,19,2,1,killed,5106
+m8f08c8d6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,533,534,19,19,2,3,killed,5077
+me4bd2f92,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,579,580,20,20,3,2,killed,5155
+mcddbc85b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,579,580,20,20,3,4,killed,5194
+m020f8b39,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,634,635,21,21,4,3,killed,5355
+m83226787,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,634,635,21,21,4,5,killed,5307
+m730c00fd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,689,690,22,22,5,4,killed,5401
+mc5ebb1a9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,689,690,22,22,5,6,killed,5477
+mf3ddb5e9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,739,740,23,23,6,5,killed,5539
+m6eefda94,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,739,740,23,23,6,7,killed,5528
+mcf2ffca5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,823,832,25,25,1 minutes,0 minutes,killed,6030
+m3e642156,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,823,832,25,25,1 minutes,2 minutes,killed,5169
+m43fcb245,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,1043,1044,32,32,6,5,killed,5512
+md3c0745e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,1043,1044,32,32,6,7,live,6155
+ma749cfd1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,1946,1947,60,60,1,0,killed,4902
+me1aaaf5d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,1946,1947,60,60,1,2,killed,4914
+maeac9f86,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2023,2024,62,62,1,0,live,6033
+m1683c773,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2023,2024,62,62,1,2,killed,5236
+m7d500369,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2037,2038,62,62,1,0,killed,5670
+m2b2bca82,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2037,2038,62,62,1,2,killed,5182
+m8675a4d4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2219,2220,67,67,1,0,killed,5216
+m9700939b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2219,2220,67,67,1,2,killed,5242
+m63176d1f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2261,2262,68,68,1,0,killed,5237
+m2605259b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2261,2262,68,68,1,2,killed,5175
+md646790e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2348,2349,70,70,1,0,killed,5196
+m8dcff086,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2348,2349,70,70,1,2,killed,5224
+m948e47a0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2429,2430,72,72,1,0,live,5966
+m5f4bdf11,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2429,2430,72,72,1,2,killed,5301
+mcc212ece,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2443,2444,72,72,1,0,killed,5738
+m6909a0eb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2443,2444,72,72,1,2,killed,5311
+m9f0c8d51,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2629,2630,77,77,1,0,killed,5369
+m5cea4b2c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2629,2630,77,77,1,2,killed,5339
+me6e26911,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2671,2672,78,78,1,0,killed,5315
+m8768d32f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2671,2672,78,78,1,2,killed,5330
+mbee2dd05,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2762,2763,80,80,1,0,killed,5299
+m0261629c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2762,2763,80,80,1,2,killed,5330
+me3eccc5b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2843,2844,82,82,1,0,live,6067
+m0a9c7fff,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2843,2844,82,82,1,2,killed,5389
+me666eae1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2855,2856,82,82,1,0,killed,5832
+m62db78c4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,2855,2856,82,82,1,2,killed,5406
+m6b361e68,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3039,3040,87,87,1,0,killed,5527
+m608cfcf8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3039,3040,87,87,1,2,killed,5372
+m3292fc75,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3079,3080,88,88,1,0,killed,5428
+m39f70d63,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3079,3080,88,88,1,2,killed,5413
+mb08bec5d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3170,3171,90,90,1,0,killed,5383
+m3214f8b8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3170,3171,90,90,1,2,killed,5441
+m43a42c89,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3220,3221,92,92,1,0,live,6028
+m0209d3e2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3220,3221,92,92,1,2,killed,5489
+m4344f73a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3232,3233,92,92,1,0,live,5990
+ma2a22adf,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3232,3233,92,92,1,2,killed,5560
+md236e808,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3246,3247,92,92,1,0,killed,5959
+m3e431fa4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3246,3247,92,92,1,2,killed,5608
+m9bbd0bf7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3445,3446,97,97,1,0,killed,5545
+mc96687ae,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3445,3446,97,97,1,2,killed,5552
+m75dbf916,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3485,3486,98,98,1,0,killed,5638
+mdea10f66,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3485,3486,98,98,1,2,killed,5533
+m92a1e9fc,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3527,3528,99,99,1,0,killed,5537
+m98fb1b9b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3527,3528,99,99,1,2,killed,5513
+m8b6a4ff9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3608,3609,101,101,1,0,killed,5599
+m380318da,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3608,3609,101,101,1,2,killed,5497
+m26538d2c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3831,3832,107,107,0,1,killed,4916
+m0a068c23,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3875,3876,108,108,1,0,killed,4976
+m343e0f79,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ILR,3875,3876,108,108,1,2,killed,4958
+m971357e7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,MOD,1117,1209,38,40,"constructor()        ERC1155(""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/"")    ","constructor()            ",stillborn,798
+mbab22592,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,MOD,1251,1356,44,46,"function uri(        uint256 _id    ) public pure override isValidTokenId(_id) returns (string memory) ","function uri(        uint256 _id    ) public pure override  returns (string memory) ",killed,4913
+m7f3cece8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,MOD,1427,1494,50,50,"function mintToken(uint256 tokenId) public isValidTokenId(tokenId) ","function mintToken(uint256 tokenId) public  ",killed,6076
+mf087d5c5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,MOD,3722,3784,106,106,"function burn(uint256 tokenId) public isValidTokenId(tokenId) ","function burn(uint256 tokenId) public  ",killed,5070
+m8066b08a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,ORFD,1251,1421,44,48,"function uri(        uint256 _id    ) public pure override isValidTokenId(_id) returns (string memory) {        return string.concat(URL, Strings.toString(_id));    }",,killed,4874
+me9c178c3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,RSD,1366,1415,47,47,"return string.concat(URL, Strings.toString(_id));","/* return string.concat(URL, Strings.toString(_id)); */",killed,4939
+m622a7344,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,915,971,29,29,"""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""","""""",killed,4950
+m41ca7915,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,1147,1203,39,39,"""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""","""""",live,5952
+mdb707035,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,2105,2149,64,64,"""must at least have one gold and one sliver""","""""",killed,5647
+mc694e9f4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,2511,2557,74,74,"""must at least have one bronze and one sliver""","""""",killed,5726
+m7910c46d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,2923,2967,84,84,"""must at least have one bronze and one gold""","""""",killed,5745
+ma031c987,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,SLR,3314,3373,94,94,"""must at least have one bronze and one gold and one sliver""","""""",killed,5885
+ma54f2a58,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,1228,1238,41,41,msg.sender,tx.origin,live,6028
+m1842df54,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,1669,1679,55,55,msg.sender,tx.origin,live,7004
+meba55060,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,1723,1733,56,56,msg.sender,tx.origin,live,6628
+m436319c6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,1779,1789,57,57,msg.sender,tx.origin,live,6240
+m7800521a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,1925,1935,60,60,msg.sender,tx.origin,live,5920
+m3748e3e1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2201,2211,67,67,msg.sender,tx.origin,live,5957
+m412ea1bb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2241,2251,68,68,msg.sender,tx.origin,live,5999
+m10fe30a4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2322,2332,70,70,msg.sender,tx.origin,live,5936
+m0b29659d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2609,2619,77,77,msg.sender,tx.origin,live,5929
+m1404b006,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2651,2661,78,78,msg.sender,tx.origin,live,5904
+m54f186c6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,2734,2744,80,80,msg.sender,tx.origin,live,5952
+m5ff60832,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3019,3029,87,87,msg.sender,tx.origin,live,6122
+m3f386ae0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3061,3071,88,88,msg.sender,tx.origin,live,5957
+m2f63c5ad,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3142,3152,90,90,msg.sender,tx.origin,live,5989
+m61b5602c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3425,3435,97,97,msg.sender,tx.origin,live,5886
+m9fd8ab59,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3467,3477,98,98,msg.sender,tx.origin,live,5877
+mf8be2cfb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3507,3517,99,99,msg.sender,tx.origin,live,5920
+m62413f2c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3585,3595,101,101,msg.sender,tx.origin,live,5871
+m5eddd744,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3808,3818,107,107,msg.sender,tx.origin,live,5914
+m16c97b63,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,TOR,3854,3864,108,108,msg.sender,tx.origin,live,5923
+m7bc02e55,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VUR,823,832,25,25,1 minutes,1 seconds,killed,5967
+mef3967e3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VUR,823,832,25,25,1 minutes,1 hours,killed,5127
+m1fe4dfe5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VUR,823,832,25,25,1 minutes,1 days,killed,5158
+m4c409b98,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VUR,823,832,25,25,1 minutes,1 weeks,killed,5067
+m75f9abf9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,422,454,17,17,uint256 public constant GOLD = 0,uint256 internal constant GOLD = 0,live,5881
+m951eaaa0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,422,454,17,17,uint256 public constant GOLD = 0,uint256 private constant GOLD = 0,live,5923
+m4d60be4a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,460,494,18,18,uint256 public constant SILVER = 1,uint256 internal constant SILVER = 1,live,5835
+mc076afbf,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,460,494,18,18,uint256 public constant SILVER = 1,uint256 private constant SILVER = 1,live,5900
+m8fa90d1e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,500,534,19,19,uint256 public constant BRONZE = 2,uint256 internal constant BRONZE = 2,live,5881
+m619a19cf,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,500,534,19,19,uint256 public constant BRONZE = 2,uint256 private constant BRONZE = 2,live,5936
+m7b73051f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,540,580,20,20,uint256 public constant THORS_HAMMER = 3,uint256 internal constant THORS_HAMMER = 3,live,5868
+m2783edf7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,540,580,20,20,uint256 public constant THORS_HAMMER = 3,uint256 private constant THORS_HAMMER = 3,live,5839
+m0a7728da,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,593,635,21,21,uint256 public constant OBLIVION_SWORD = 4,uint256 internal constant OBLIVION_SWORD = 4,live,5955
+m1a5d154c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,593,635,21,21,uint256 public constant OBLIVION_SWORD = 4,uint256 private constant OBLIVION_SWORD = 4,live,5960
+m58357ed5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,648,690,22,22,uint256 public constant CAPTAIN_SHIELD = 5,uint256 internal constant CAPTAIN_SHIELD = 5,live,5961
+m5d94f353,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,648,690,22,22,uint256 public constant CAPTAIN_SHIELD = 5,uint256 private constant CAPTAIN_SHIELD = 5,live,5889
+m065a187d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,703,740,23,23,uint256 public constant DANTE_KEY = 6,uint256 internal constant DANTE_KEY = 6,live,5943
+mc8e4bcb1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,703,740,23,23,uint256 public constant DANTE_KEY = 6,uint256 private constant DANTE_KEY = 6,live,5867
+m79fef2dc,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,755,778,24,24,uint256 public lastMint,uint256 internal lastMint,live,5892
+mfd512de1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,755,778,24,24,uint256 public lastMint,uint256 private lastMint,live,5866
+m2288734c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,784,832,25,25,uint256 public constant coolDownMint = 1 minutes,uint256 internal constant coolDownMint = 1 minutes,live,5816
+m38082d00,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,784,832,25,25,uint256 public constant coolDownMint = 1 minutes,uint256 private constant coolDownMint = 1 minutes,live,5925
+mfab3b87a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,839,871,27,27,address private immutable _owner,address public immutable _owner,live,5964
+mb7a86653,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,839,871,27,27,address private immutable _owner,address internal immutable _owner,live,5969
+m643a608f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,877,971,28,29,"string private constant URL =        ""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""","string public constant URL =        ""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""",live,5984
+meeffea79,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/Forge.sol,VVR,877,971,28,29,"string private constant URL =        ""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""","string internal constant URL =        ""ipfs://QmVjErHSRQVmZpqUhGYPLWx75wsM8SjSTW7y3bFAMvQPr2/""",live,5902
+m1e85343b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BLR,1011,1015,33,33,true,false,live,6145
+m4b750cc8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BLR,1611,1615,48,48,true,false,live,5494
+mc5f3cd09,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,218,221,8,8," * "," + ",killed,3704
+m532e2767,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,218,221,8,8," * "," - ",stillborn,772
+mf6c8a629,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,218,221,8,8," * "," / ",stillborn,750
+md4c5f9b0,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,218,221,8,8," * "," ** ",stillborn,763
+mf198261a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,218,221,8,8," * "," % ",killed,3725
+mbd50cd12,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,223,227,8,8," ** "," + ",killed,3681
+m4dcf946a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,223,227,8,8," ** "," - ",killed,3721
+m52e35326,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,223,227,8,8," ** "," * ",killed,3702
+mce2a2a98,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,223,227,8,8," ** "," / ",stillborn,775
+mafc7e7e1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,223,227,8,8," ** "," % ",killed,3659
+m8824b5c2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,302,306,12,12," != "," >  ",killed,4318
+m4544f89c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,302,306,12,12," != ","  < ",live,5610
+m05cde2d1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,302,306,12,12," != "," <= ",killed,4182
+me579f88d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,302,306,12,12," != "," >= ",killed,4185
+me25d6e78,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,302,306,12,12," != "," == ",killed,4183
+m4505ca5f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,474,477,19,19," * "," + ",killed,3809
+m02a5411a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,474,477,19,19," * "," - ",killed,3602
+m80ccec61,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,474,477,19,19," * "," / ",killed,3810
+m2c77ad30,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,474,477,19,19," * "," ** ",killed,3625
+m53a58041,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,474,477,19,19," * "," % ",killed,3785
+m939b9d1d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,479,483,19,19," ** "," + ",killed,3781
+m40a27bee,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,479,483,19,19," ** "," - ",killed,3815
+m308aa2fa,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,479,483,19,19," ** "," * ",killed,3796
+ma87fceab,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,479,483,19,19," ** "," / ",killed,3794
+m47d221e8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,479,483,19,19," ** "," % ",killed,3782
+m88a2cfb3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,647,651,25,25," == "," <= ",killed,3702
+m63f48616,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,647,651,25,25," == "," >= ",live,5531
+m1017dba5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,647,651,25,25," == ","  < ",killed,3757
+mf6c9b4fa,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,647,651,25,25," == ","  > ",killed,3692
+m4fa3bedd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,647,651,25,25," == "," != ",killed,3660
+m52bf2f7f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,723,726,26,26," < "," <= ",killed,3796
+m9406ac64,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,723,726,26,26," < "," >=  ",killed,3690
+m0a16251e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,723,726,26,26," < "," > ",killed,3671
+m68a06a03,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,723,726,26,26," < "," != ",live,5517
+mb5941a60,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,723,726,26,26," < "," == ",killed,3715
+mbbc24488,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,801,804,27,27," * "," + ",killed,3705
+md6a03481,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,801,804,27,27," * "," - ",killed,3693
+m2e02b5d5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,801,804,27,27," * "," / ",killed,3654
+mea3c45d7,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,801,804,27,27," * "," ** ",killed,3699
+m5d6ea44f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,801,804,27,27," * "," % ",killed,3708
+m7dd9eb7c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,806,810,27,27," ** "," + ",killed,3713
+m12ab0e50,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,806,810,27,27," ** "," - ",killed,3753
+m6274459b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,806,810,27,27," ** "," * ",killed,3717
+m7af70433,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,806,810,27,27," ** "," / ",killed,3663
+m72a25295,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,806,810,27,27," ** "," % ",killed,3718
+mf0285f8b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,858,862,28,28," >= ","  > ",killed,3885
+me43cc820,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,858,862,28,28," >= ","  < ",killed,3681
+maf5ec2ce,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,858,862,28,28," >= "," <= ",killed,3704
+m251b65e9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,858,862,28,28," >= "," != ",killed,3715
+m252361aa,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,858,862,28,28," >= "," == ",live,5535
+md9be8707,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1118,1121,37,37," * "," + ",killed,3855
+mead4f2ae,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1118,1121,37,37," * "," - ",killed,3888
+m211f19ab,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1118,1121,37,37," * "," / ",killed,3892
+m6ee6dc8c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1118,1121,37,37," * "," ** ",killed,3894
+m820a69d9,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1118,1121,37,37," * "," % ",killed,3858
+mfc70ecd5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1123,1127,37,37," ** "," + ",killed,3880
+m1bb8f41a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1123,1127,37,37," ** "," - ",killed,3882
+m691fedac,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1123,1127,37,37," ** "," * ",killed,3898
+m7fc83413,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1123,1127,37,37," ** "," / ",killed,3882
+m52409964,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1123,1127,37,37," ** "," % ",killed,3838
+m4de48978,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1189,1193,39,39," >= ","  > ",killed,3986
+m7eaf9115,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1189,1193,39,39," >= ","  < ",killed,3940
+m5d13907c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1189,1193,39,39," >= "," <= ",killed,3848
+m92fe3866,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1189,1193,39,39," >= "," != ",killed,3981
+m3bc43d46,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1189,1193,39,39," >= "," == ",killed,3866
+ma959d7cb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1296,1299,42,42," > "," >=  ",killed,4008
+mac32615b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1296,1299,42,42," > "," <=  ",killed,3833
+mc5992445,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1296,1299,42,42," > "," < ",killed,3829
+maefa3424,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1296,1299,42,42," > "," != ",live,5510
+mb6dd2d1b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1296,1299,42,42," > "," == ",killed,3871
+m82303219,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1425,1428,44,44," * "," + ",killed,3948
+m51dae0db,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1425,1428,44,44," * "," - ",killed,3895
+m84a06c63,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1425,1428,44,44," * "," / ",killed,3927
+me6f1f94c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1425,1428,44,44," * "," ** ",killed,3886
+me4c3c09a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1425,1428,44,44," * "," % ",killed,3935
+m0dc11838,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1465,1468,45,45," / "," + ",killed,3885
+m2cd5e09c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1465,1468,45,45," / "," - ",killed,3894
+m4c988e23,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1465,1468,45,45," / "," * ",killed,3897
+m9a4beb72,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1465,1468,45,45," / "," ** ",killed,3886
+mea1b913b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1465,1468,45,45," / "," % ",killed,3940
+m8e29f928,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1493,1496,46,46," < "," <= ",live,5539
+mfacc49fd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1493,1496,46,46," < "," >=  ",killed,3841
+mf1e1c57a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1493,1496,46,46," < "," > ",killed,3880
+m0e08e163,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1493,1496,46,46," < "," != ",killed,4142
+mf1ddbbdb,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1493,1496,46,46," < "," == ",killed,3848
+m58872443,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1861,1864,57,57," > "," >=  ",killed,4275
+m8222b3b8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1861,1864,57,57," > "," <=  ",killed,4174
+mfa8ce311,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1861,1864,57,57," > "," < ",killed,4154
+mec2f398a,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1861,1864,57,57," > "," != ",live,5502
+m1f49a888,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,BOR,1861,1864,57,57," > "," == ",killed,4121
+mb37ebb8d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CCD,378,564,18,22,"constructor(uint256 initialSupply) ERC20(""Gold"", ""GLD"") {        uint256 tokens = initialSupply * 10 ** decimals();        _mint(msg.sender, tokens);        _owner = msg.sender;    }",,stillborn,753
+ma6ddf39f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CSC,292,312,12,12,msg.sender != _owner,true,killed,4104
+m58c5a0af,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CSC,292,312,12,12,msg.sender != _owner,false,killed,4244
+mfd5458b6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CSC,834,868,28,28,balanceOf(address(this)) >= tokens,true,killed,4346
+m28a173d8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CSC,834,868,28,28,balanceOf(address(this)) >= tokens,false,killed,4023
+m1a330384,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,CSC,939,995,28,32," else {            _mint(msg.sender, tokens);        }",,killed,3752
+m4cf96d96,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,630,693,25,25,"require(msg.value == 1 ether, ""user must pay exactly one eth"");","/* require(msg.value == 1 ether, ""user must pay exactly one eth""); */",killed,3767
+mb3fee886,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,702,771,26,26,"require(totalSupply() < TOTAL, ""sale passed, better luck next time"");","/* require(totalSupply() < TOTAL, ""sale passed, better luck next time""); */",killed,4157
+me47de6e6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,1147,1269,38,41,"require(            balanceOf(msg.sender) >= realTokens,            ""cannot sellback more than what you have""        );","/* require(            balanceOf(msg.sender) >= realTokens,            ""cannot sellback more than what you have""        ); */",killed,4097
+m8344412f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,1278,1337,42,42,"require(realTokens > 0, ""tokens must be bigger than zero"");","/* require(realTokens > 0, ""tokens must be bigger than zero""); */",killed,4064
+m91a508a1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,1482,1552,46,46,"require(eth < address(this).balance, ""cannot pay more than you have"");","/* require(eth < address(this).balance, ""cannot pay more than you have""); */",killed,4194
+m2343f3d1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,EHC,1847,1888,57,57,"require(amount > 0, ""Nothing to withdraw;","/* require(amount > 0, ""Nothing to withdraw; */",stillborn,786
+m41f4296c,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ETR,1561,1589,47,47,payable(msg.sender).transfer,payable(msg.sender).send,live,5756
+me15f25b3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ETR,1561,1594,47,47,payable(msg.sender).transfer,"payable(msg.sender).call{value: eth}("""")",live,5746
+mfee8375d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ETR,1923,1947,58,58,payable(_owner).transfer,payable(_owner).send,live,5577
+m5cfa1d65,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ETR,1923,1955,58,58,payable(_owner).transfer,"payable(_owner).call{value: amount}("""")",live,5631
+me7095c4e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,570,620,24,24,"function buyToken() public payable returns (bool) ","function buyToken() external payable returns (bool) ",stillborn,835
+mcb5cffc3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1028,1081,36,36,"function sellBack(uint tokens) public returns (bool) ","function sellBack(uint tokens) external returns (bool) ",live,5816
+m187daeba,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1028,1081,36,36,"function sellBack(uint tokens) public returns (bool) ","function sellBack(uint tokens) internal returns (bool) ",killed,4059
+m3b562daf,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1028,1081,36,36,"function sellBack(uint tokens) public returns (bool) ","function sellBack(uint tokens) private returns (bool) ",killed,3884
+ma87a7410,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1628,1671,51,51,"function withdrawTokens() public onlyOwner ","function withdrawTokens() external onlyOwner ",live,5842
+m0c39a848,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1628,1671,51,51,"function withdrawTokens() public onlyOwner ","function withdrawTokens() internal onlyOwner ",killed,4491
+m08888d39,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1628,1671,51,51,"function withdrawTokens() public onlyOwner ","function withdrawTokens() private onlyOwner ",killed,4455
+me568c4e3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1752,1789,55,55,"function withdraw() public onlyOwner ","function withdraw() external onlyOwner ",live,5818
+m7d7fe4ff,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1752,1789,55,55,"function withdraw() public onlyOwner ","function withdraw() internal onlyOwner ",killed,4407
+mb318e9ac,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,FVR,1752,1789,55,55,"function withdraw() public onlyOwner ","function withdraw() private onlyOwner ",killed,4236
+mf14bd022,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,GVR,638,647,25,25,msg.value,tx.gasprice,killed,3777
+mc1370249,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,215,218,8,8,1e6,999999,live,6099
+m45b76701,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,215,218,8,8,1e6,1000001,killed,4064
+me57b1869,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,221,223,8,8,10,9,live,5772
+mb98a75d1,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,221,223,8,8,10,11,killed,3964
+m56d79e1b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,227,229,8,8,18,17,live,6000
+m9f58fffa,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,227,229,8,8,18,19,killed,4045
+me0de9868,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,477,479,19,19,10,9,killed,4070
+m4f691813,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,477,479,19,19,10,11,killed,4538
+m0dd9c7e5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,651,658,25,25,1 ether,0 ether,killed,3814
+m4940edfe,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,651,658,25,25,1 ether,2 ether,killed,4075
+ma5b3afb5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,797,801,27,27,1000,999,killed,3895
+m447b40b2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,797,801,27,27,1000,1001,killed,3989
+m005718f8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,804,806,27,27,10,9,killed,3931
+m9ce587ef,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,804,806,27,27,10,11,killed,3940
+m8b25bf80,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1121,1123,37,37,10,9,killed,4137
+m857bf8da,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1121,1123,37,37,10,11,killed,4131
+me863c673,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1299,1300,42,42,0,1,live,6002
+m2ccfa353,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1468,1472,45,45,1000,999,live,5758
+m61632d9f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1468,1472,45,45,1000,1001,live,5630
+m37ba49f6,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,ILR,1864,1865,57,57,0,1,live,5572
+mfc04ec61,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,PKD,570,620,24,24,"function buyToken() public payable returns (bool) ","function buyToken() public  returns (bool) ",stillborn,772
+m7b6d1bf8,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,MOD,378,434,18,18,"constructor(uint256 initialSupply) ERC20(""Gold"", ""GLD"") ","constructor(uint256 initialSupply)  ",stillborn,784
+m7d3d340b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,MOD,1628,1671,51,51,"function withdrawTokens() public onlyOwner ","function withdrawTokens() public  ",killed,4414
+me9ec25db,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,MOD,1752,1789,55,55,"function withdraw() public onlyOwner ","function withdraw() public  ",killed,4331
+mc20949e4,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,MOI,570,620,24,24,"function buyToken() public payable returns (bool) ","function buyToken() public payable onlyOwner returns (bool) ",killed,3736
+m4b9c9f65,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,MOI,1028,1081,36,36,"function sellBack(uint tokens) public returns (bool) ","function sellBack(uint tokens) public onlyOwner returns (bool) ",killed,4004
+ma61f7302,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,RSD,1004,1016,33,33,return true;,/* return true; */,live,5667
+m53c358c2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,RSD,1604,1616,48,48,return true;,/* return true; */,live,5660
+me9ae048d,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,SLR,419,425,18,18,"""Gold""","""""",live,5574
+m97381f78,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,SLR,427,432,18,18,"""GLD""","""""",live,5614
+m4cf45e2e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,SLR,1867,1912,57,57,"""Nothing to withdraw; contract balance empty""","""""",killed,4304
+m903448be,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,292,302,12,12,msg.sender,tx.origin,live,5687
+m4450c574,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,509,519,20,20,msg.sender,tx.origin,live,5693
+m905f658f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,547,557,21,21,msg.sender,tx.origin,live,5597
+m6930482e,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,909,919,29,29,msg.sender,tx.origin,live,5573
+m0d0c3838,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,965,975,31,31,msg.sender,tx.origin,live,5663
+m60c21086,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,1178,1188,39,39,msg.sender,tx.origin,live,5663
+m09a3dd5f,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,1356,1366,43,43,msg.sender,tx.origin,live,5591
+m8bc30ddd,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,TOR,1569,1579,47,47,msg.sender,tx.origin,live,5846
+mb881bec2,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VUR,651,658,25,25,1 ether,1 wei,killed,3747
+m6a3e14d3,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VUR,1428,1437,44,44,0.5 ether,0.5 wei,stillborn,793
+m8952f00b,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VVR,152,184,7,7,address private immutable _owner,address public immutable _owner,live,5598
+m15b67588,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VVR,152,184,7,7,address private immutable _owner,address internal immutable _owner,live,5595
+mf0aef025,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VVR,190,229,8,8,uint256 constant TOTAL = 1e6 * 10 ** 18,uint256 constant public constant TOTAL = 1e6 * 10 ** 18,stillborn,797
+m860258f5,/Users/abesolyman/Desktop/development/blockchain/Metana bootcamp/metana-assignments/M4/contracts/PartialRefund.sol,VVR,190,229,8,8,uint256 constant TOTAL = 1e6 * 10 ** 18,uint256 constant private constant TOTAL = 1e6 * 10 ** 18,stillborn,754
