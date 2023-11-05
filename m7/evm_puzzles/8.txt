@@ -1,4 +1,4 @@
-the solution is: 0x0x60Fd60005360016000F3
+the solution is sending call data: 0x0x60Fd60005360016000F3
 
 [00]	PUSH1	Fd -> fd into stack
 [02]	PUSH1	00 -> 0 in stack

@@ -1,4 +1,4 @@
-the answer is 16
+the answer is sending 16 wei
 
 becuse 16 * 16 = 256 which is 100 in hex decimal 
 

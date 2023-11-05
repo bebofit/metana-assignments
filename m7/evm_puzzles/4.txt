@@ -1,4 +1,4 @@
-the solution is 6
+the solution is sending 6 wei
 
 c = 1100
 a = 1010

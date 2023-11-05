@@ -1,5 +1,7 @@
-the solution is 0x000000000000000000000000000000000000000000000000000000000000000a
+the solution is call data 0x000000000000000000000000000000000000000000000000000000000000000a
 
 because call CALLDATALOAD looks for the offset of the index in 32bytes and index is 0
+and sending 0x0a will result in solidity adding trailing zeros to input to match 32bytes
+but we want it at the back
 
 so this the JUMPSET location
