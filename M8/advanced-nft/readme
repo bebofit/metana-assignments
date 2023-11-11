@@ -3,7 +3,7 @@ Gas Question:
 20,000 (from zero to one zero) × 55 gwei × $1785.04 / 1 Billion = $1.5 per address/mint 
 so let us say 10 address = $15 
 
-20,000 for setting bitmap = $1.5 on consturcting
+20,000 for setting bitmap = $1.5 on constructing
 then 5,000 for changing one bit in the map to true (from non-zero to non-zero) = 0.3 cents per address/mint
 
 
