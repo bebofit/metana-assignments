@@ -1,0 +1,7 @@
+the solution is sending 6 wei
+
+c = 1100
+a = 1010
+
+XORign them
+= 0110 = 6

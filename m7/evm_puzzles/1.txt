@@ -1,0 +1,1 @@
+the sloution is sending 8 wei to be stored in stack as the jump instruction requires the code for the jumpset to avoid all reverts

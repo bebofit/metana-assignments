@@ -1,0 +1,5 @@
+the solution is: 0x222222222222 call data and 15 wei
+
+calldata size is 6 which mod 3 is zero so the condition is 1 for JUMPI
+
+and 15 wei because F + A = 19 which is the JUMPDEST

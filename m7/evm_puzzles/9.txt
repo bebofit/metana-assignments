@@ -1,0 +1,4 @@
+the solution is: 0x22222222 call data and 2 wei 
+
+call data size is 4 which is bigger than 3 
+and 4 *2 = 8 in binary so it passes both conditions
