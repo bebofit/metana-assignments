@@ -10,9 +10,10 @@ contract BitWise {
         }
     }
 
-    function countBitSetAsm(uint8 data) public pure returns (uint8 result) {
+    function countBitSetAsm(uint8 data) public pure returns (uint8) {
         // replace following line with inline assembly code
         assembly {
+            let result := 0
             for {
                 let i := 0
             } lt(i, 8) {
@@ -24,6 +25,8 @@ contract BitWise {
                     result := add(result, 1)
                 }
             }
+            mstore(0, result)
+            return(0, 32)
         }
     }
 }
@@ -37,18 +40,17 @@ contract String {
     function charAt(
         string memory input,
         uint index
-    ) public view returns (bytes2) {
-        bytes2 a;
+    ) public pure returns (bytes2) {
         assembly {
-            // this is where the len of string located
-            let len := mload(0x80)
-            let q := and(not(iszero(len)), lt(index, len))
-            if eq(q, 1) {
-                // 0xa0 where content of string is + index to get starting position
-                let loc := add(0xa0, index)
-                a := mload(loc)
-            }
+            let offset := add(div(index, 32), 1)
+            let desiredOffset := mul(offset, 32)
+            let desiredIndex := mod(index, 32)
+            let inputPtr := add(input, add(desiredOffset, desiredIndex))
+            let
+                mask
+            := 0xff00000000000000000000000000000000000000000000000000000000000000
+            mstore(inputPtr, and(mload(inputPtr), mask))
+            return(inputPtr, 32)
         }
-        return a;
     }
 }
